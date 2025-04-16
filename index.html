@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Child Management Website</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="Home-style.css" />
+  <link rel="stylesheet" href="footer-style.css">
+  <script src="./Home-script.js" defer></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="logo">
+        <div class="logo-hd">
+            <img src="./assets/logo/logo4.png" alt="logo">
+            <div class="logo-text">
+                <h2>BrightNest</h2>
+                <p>Empowering Bright Futures</p>
+            </div>
+        </div>
+        <div class="logo-sm">
+            <p>Child Helpline - <b>09153251972 (Call free)</b></p>
+            <div class="icons icon-handles">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-youtube"></i>
+                <i class="uil uil-linkedin"></i>
+            </div>
+            <a href="./donate.html" class="btn-donate">Donate</a>
+        </div>
+    </div>
+
+   <!-- Hamburger Menu -->
+<div class="hamburger">☰</div>
+
+<!-- Navigation Menu -->
+<nav class="nav-links" id="navLinks">
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Services ▾</button>
+    <div class="dropdown-content">
+      <a href="#">Daycare</a>
+      <a href="#">Health Check</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Act Now ▾</button>
+    <div class="dropdown-content">
+      <a href="#">Register</a>
+      <a href="#">Volunteer</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Update ▾</button>
+    <div class="dropdown-content">
+      <a href="#">News</a>
+      <a href="#">Events</a>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search anything on the website..."
+    />
+    <button onclick="performSearch()" title="Search">
+      <i class="uil uil-search"></i>
+    </button>
+  </div>
+</nav>
+ </header>
+
+  <!-- Hero Section -->
+   <section class="hero">
+
+    <div class="slider-container" id="slider">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img src="./assets/images/bg.png" alt="Slide 1" />
+        <div class="slide-text">
+          <h2>Who We Are</h2>
+          <p>We are a dedicated organization focused on preventing child abuse, promoting child welfare, and empowering communities to create a safer environment for every child.</p>
+          <a href="#" class="hero-btn">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="./assets/images/event7.jpg" alt="Slide 2" />
+        <div class="slide-text">
+          <h2>Our Aim</h2>
+          <p>Our aim is to create a world where every child is safe, nurtured, and empowered to reach their full potential. Together, we strive to build a brighter future for all children.</p>
+          <a href="#" class="hero-btn">Our Services</a>
+        </div>
+      </div>
+      <!-- Repeat for each slide -->
+      <div class="slide">
+        <img src="./assets/images/awa.jpg" alt="Slide 2" />
+        <div class="slide-text">
+          <h2>Awareness</h2>
+          <p>Join us in spreading awareness about child welfare. Together, we can ensure every child receives the care, protection, and opportunities they deserve for a brighter future.</p>
+          <a href="#" class="hero-btn">Programs</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="./assets/images/event4.jpg" alt="Slide 3" />
+        <div class="slide-text">
+          <h2>Be Part</h2>
+          <p>Join us in our mission to save more children and provide them with the care, protection, and opportunities they deserve. Together, we can make a difference.</p>
+          <a href="#" class="hero-btn">Join Us</a>
+        </div>
+      </div>
+      
+      <div class="slide">
+        <img src="./assets/images/call.jpg" alt="Slide 3" />
+        <div class="slide-text">
+          <h2>24/7 Helpline</h2>
+          <p>Call us for immediate support and ensure every child’s safety and well-being.</p>
+          <a href="#" class="hero-btn">Report Now</a>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Navigation Buttons -->
+    <button class="control left" onclick="moveLeft()"></button>
+    <button class="control right" onclick="moveRight()">&#10095;</button>
+  </section>
+
+    
+  <!---three-box-top-----><!----
+  <section class="three-box-top">
+    <div class="box">
+        <h3>Child Welfare</h3>
+        <p>Ensuring the well-being and development of every child through comprehensive programs, community support, and dedicated care. Our mission is to create a nurturing environment where children can thrive, grow, and achieve their full potential. Together, we can make a lasting impact on the lives of countless children.</p>
+        <a href="#" class="btn-boxs">
+           Get Involved 
+           <i class="uil uil-angle-right"></i>
+       </a>
+   </div>
+
+  <div class="box">
+       <h3>Health Check</h3>
+       <p>Regular health check-ups for children to ensure their well-being. Our health programs focus on preventive care, early detection, and treatment to promote a healthy future for every child. Join us in creating a healthier tomorrow for the next generation.</p>
+    <a href="#" class="btn-boxs">
+       Learn More
+   </a>
+   </div>
+
+   <div class="box">
+       <h3>Education</h3>
+       <p>Providing quality education, resources, and opportunities for every child to unlock their potential, achieve their dreams, and build a brighter future. Together, we can ensure that education becomes a powerful tool for transforming lives and empowering communities.</p>
+    <a href="#" class="btn-boxs">Learn More</a>
+   </div>
+  </section> -->
+
+  <section class="about" id="about">
+    <div class="about-container">
+        <div class="about-icon">
+            <h5>About Us</h5>
+            <span><i> The</i> <b>BRIGHTNEST <br> FOUNDATION </b><br> <i>...Empowering Bright Futures</i> </span>
+        </div>
+    
+        <p>
+          The BrightNest Foundation is a child-centred non-profit organisation to prevent child sexual abuse and provide access to care, information, protection and emergency intervention for children who are sexually abused or at risk, and their family. The Foundation provides the ideal response to children through a 24-hour free child telephone helpline and its child-friendly Child Advocacy Centres based in Lagos and Abuja, which provide professional counselling, medical, legal, shelter, forensic interviewing, and psycho-social support, as well as referral services.
+        </p>
+        
+    </div>
+
+    <a href="#" class="btn-learn-more-about">Learn More</a>
+  </section>
+
+  <!----------Kids Directory------>
+  <section class="kid-directory">
+    <h4>Search The All-New Safe Kids Directory</h4>
+    <p>The Safe Kids Directory provides information on all child protection services available to children in Nigeria. It is a one-stop portal to help you find the closest police station, medical centre, court, shelter and mental-health service facility.</p>
+
+    <div class="directory-search">
+        <input type="text" placeholder="Search directory..." class="directory-input" />
+        <button class="directory-search-btn" title="Search Directory">
+            <i class="uil uil-search"></i>
+        </button>
+    </div>
+
+  </section>
+
+  <!------Aim----------->
+  <section class="aim">
+    <div class="aim-head">
+        <div class="layout">
+            <p>We aim to touch Lives</p>
+            <h2>Our Impact so Far</h2>
+        </div>
+    </div>
+
+    <div class="aim-container">
+        <div class="layout">
+            <div class="aim-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>105244 </h3>
+                <p>Child Empowerment</p>
+            </div>
+
+            <div class="aim-box">
+                <i class="uil uil-heart"></i>
+                <h3>290505</h3>
+                <p>Helpline</p>
+            </div>
+
+            <div class="aim-box">
+                <i class="uil uil-phone"></i>
+                <h3>8453</h3>
+                <p>Helpline</p>
+            </div>
+
+            <div class="aim-box">
+                <i class="uil uil-balance-scale"></i>
+                <h3>53</h3>
+                <p>Legal Advocacy</p>
+            </div>
+
+            <div class="aim-box">
+                <i class="uil uil-lightbulb-alt"></i>
+                <h3>18453</h3>
+                <p>Adult Awareness</p>
+            </div>
+
+            <div class="aim-box">
+                <i class="uil uil-shield-check"></i>
+                <h3>153</h3>
+                <p>Child Protection</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="help">
+        <div class="layout">
+            <h2>Help us to help them</h2>
+            <p>Join us in our mission to save more children and provide them with the care, protection, and opportunities they deserve. Together, we can make a difference.</p>
+        <a href="#" class="btn-help">Donate</a>
+        </div>
+    </div>
+
+    <div class="work-with-us">
+        <div class="layout">
+            <h2>Work with us</h2>
+            <p>Join our team and make a difference in the lives of children. Together, we can create a brighter future for every child.</p>
+        <a href="#" class="btn-work">Join Us</a>
+        </div>
+    </div>
+  </section>
+
+
+  <!------------events----------------->
+  <section class="event">
+    <div class="events">
+        <div class="box">
+            <i class="uil uil-thumbs-up"></i>
+            <h3>50+</h3>
+            <p>Successful Projects</p>
+        </div>
+
+        <div class="box">
+            <i class="uil uil-heart"></i>
+            <h3>110,100+</h3>
+            <p>Live Touched</p>
+        </div>
+
+        <div class="box">
+            <i class="uil uil-globe"></i>
+            <h3>25+</h3>
+            <p>Global Partners</p>
+        </div>
+    </div>
+  </section>
+
+  <!---------Gallery----------->
+  <section class="gallery">
+    <div class="layout">
+        <h2>Gallery</h2>
+        <p>Explore our gallery to see the impact of our work and the joy we bring to children's lives.</p>
+
+        <div class="gallery-container">
+            <img src="./assets/images/event1.jpg" alt="Gallery Image 1" />
+            <img src="./assets/images/event2.jpg" alt="Gallery Image 2" />
+            <img src="./assets/images/event3.jpg" alt="Gallery Image 3" />
+            <img src="./assets/images/event4.jpg" alt="Gallery Image 4" />
+            <img src="./assets/images/event5.jpg" alt="Gallery Image 5" />
+            <img src="./assets/images/event7.jpg" alt="Gallery Image 6" />
+        </div>
+    </div>
+  </section>
+
+  <div class="que">
+    <h2>Frequently Asked Questions</h2>
+    <p>Have questions? We have answers! Check out our FAQ section for more information.</p>
+    <a href="./contact.html" class="btn-contact">Contact Us</a>
+  </div>
+
+  <!---------Partner---------->
+  <section class="partner">
+    <div class="layout">
+        <h2>Our Partners</h2>
+      <!-- Image container -->
+      <div class="partner-track-container">
+        <div class="partner-track" id="partnerTrack">
+          <img src="./assets/images/partner1.jpg" alt="Logo1"/>
+          <img src="./assets/images/partner2.jpg" alt="Logo 2" />
+          <img src="./assets/images/partner3.jpg" alt="Logo 3" />
+          <img src="./assets/images/partner4.jpg" alt="Logo 4" />
+          <img src="./assets/images/partner6.jpg" alt="Logo 5" />
+          <img src="./assets/images/partner7.jpg" alt="Logo 6" />
+          <img src="./assets/images/partner8.jpg" alt="Logo 7" />
+          <img src="./assets/images/partner9.jpg" alt="Logo 8" />
+          <img src="./assets/images/partner9.jpg" alt="Logo 9" />
+          <img src="./assets/images/partner10.jpg" alt="Logo 10" />
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-----footer----------->
+  <footer>
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay up to date on our events and activities</p>
+      <form>
+        <input type="email" placeholder="Email Address" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Navigation and Info -->
+    <div class="footer-main">
+        <div class="footer-top">
+            <div class="logo-nav">
+                <img src="./assets/logo/logo4.png" alt= "BrightNest Logo" />
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Donation</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>
+
+        <div class="helpline">
+            <p><strong>Child Helpline – 09153251972</strong> <em>(Call is free)</em></p>
+                <div class="socials">
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                    <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="addresses">
+                <p><i class="fas fa-map-marker-alt"></i> 2A, Akin Ogunmade-Davies close, Gbagada phase II estate, Gbagada, Lagos.</p>
+                <p><i class="fas fa-map-marker-alt"></i> House D2, 2nd Avenue, Salatu    Royale Estate, Wuse 2, Abuja.</p>
+            </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <div class="left-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Credits</a>
+          <a href="#">Glossary of Key Terms</a>
+        </div>
+        <p>&copy; 2024 The Cece Yara Child Advocacy Centre. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

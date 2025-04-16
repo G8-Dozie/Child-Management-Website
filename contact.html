@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Child Management Website</title>
+
+  <!-- CSS Files -->
+   <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="Home-style.css" />
+  <link rel="stylesheet" href="footer-style.css">
+  <script src="./Home-script.js" defer></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="logo">
+        <div class="logo-hd">
+            <img src="./assets/logo/logo4.png" alt="logo">
+            <div class="logo-text">
+                <h2>BrightNest</h2>
+                <p>Empowering Bright Futures</p>
+            </div>
+        </div>
+        <div class="logo-sm">
+            <p>Child Helpline - <b>09153251972 (Call free)</b></p>
+            <div class="icons icon-handles">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-youtube"></i>
+                <i class="uil uil-linkedin"></i>
+            </div>
+            <a href="#" class="btn-donate">Donate</a>
+        </div>
+    </div>
+
+   <!-- Hamburger Menu -->
+<div class="hamburger">☰</div>
+
+<!-- Navigation Menu -->
+<nav class="nav-links" id="navLinks">
+  <a href="./index.html">Home</a>
+  <a href="#">About Us</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Services ▾</button>
+    <div class="dropdown-content">
+      <a href="#">Daycare</a>
+      <a href="#">Health Check</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Act Now ▾</button>
+    <div class="dropdown-content">
+      <a href="#">Register</a>
+      <a href="#">Volunteer</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Update ▾</button>
+    <div class="dropdown-content">
+      <a href="#">News</a>
+      <a href="#">Events</a>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search anything on the website..."
+    />
+    <button onclick="performSearch()" title="Search">
+      <i class="uil uil-search"></i>
+    </button>
+  </div>
+</nav>
+ </header>
+
+ <div class="contact-info">
+    <div class="info-box">
+      <p><i class="fas fa-map-marker-alt"></i><strong>Offices</strong></p>
+      <p>2A, Akin Ogunmade-Davies close, Gbagada phase II estate, Lagos.</p>
+      <p>House D2, 2nd Avenue, Salatu Royale Estate, Wuse 2, Abuja.</p>
+    </div>
+    <div class="info-box">
+      <p><i class="fas fa-envelope"></i><strong>Email Us</strong></p>
+      <p>info@ceceyara.org</p>
+    </div>
+    <div class="info-box">
+      <p><i class="fas fa-phone"></i><strong>Call Us</strong></p>
+      <p>+234 800 800 8001<br>+234 812 630 4794<br>+234 906 589 2612<br>+234 902 988 0445</p>
+    </div>
+    <div class="info-box">
+      <p><i class="fas fa-users"></i><strong>Connect With Us</strong></p>
+      <div class="social-icons">
+        <i class="uil uil-facebook-f"></i>
+        <i class="uil uil-twitter"></i>
+        <i class="uil uil-youtube"></i>
+        <i class="uil uil-instagram"></i>
+        <i class="uil uil-linkedin"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-left">
+      <h2>Want to meet physically?</h2>
+      <p>You can book an appointment with us.</p>
+      <button>Book an Appointment</button>
+    </div>
+    <div class="form-right">
+      <h2>Send us a Message</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required />
+        <div class="inline-inputs">
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone Number" />
+        </div>
+        <textarea rows="4" placeholder="Message" required></textarea>
+        <select required>
+          <option value="">Report a case</option>
+          <option value="abuse">Child Abuse</option>
+          <option value="neglect">Child Neglect</option>
+          <option value="violence">Domestic Violence</option>
+        </select>
+        <input type="text" placeholder="Subject" />
+        <textarea rows="3" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <!-----footer----------->
+  <footer>
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay up to date on our events and activities</p>
+      <form>
+        <input type="email" placeholder="Email Address" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Navigation and Info -->
+    <div class="footer-main">
+        <div class="footer-top">
+            <div class="logo-nav">
+                <img src="./assets/logo/logo4.png" alt= "BrightNest Logo" />
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Donation</a>
+                    <a href="#">Blog</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>
+
+        <div class="helpline">
+            <p><strong>Child Helpline – 09153251972</strong> <em>(Call is free)</em></p>
+                <div class="socials">
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                    <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="addresses">
+                <p><i class="fas fa-map-marker-alt"></i> 2A, Akin Ogunmade-Davies close, Gbagada phase II estate, Gbagada, Lagos.</p>
+                <p><i class="fas fa-map-marker-alt"></i> House D2, 2nd Avenue, Salatu    Royale Estate, Wuse 2, Abuja.</p>
+            </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <div class="left-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Credits</a>
+          <a href="#">Glossary of Key Terms</a>
+        </div>
+        <p>&copy; 2024 The Cece Yara Child Advocacy Centre. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
